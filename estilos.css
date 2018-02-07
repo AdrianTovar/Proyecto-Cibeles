@@ -4,13 +4,17 @@ html{
 }
 body{
   margin-bottom: 80px;
-
+}
+.header{
+  font-family: 'Pacifico',cursive;
+  color: red;
 }
 .pie{
   position: absolute;
   bottom: 0;
   width: 100%;
-  color: white;
+  color: black;
+  font-family: 'Pacifico',cursive;
   /* height:80px;
   line-height: 80px; */
   background-color: #ffd3c5;
@@ -68,8 +72,14 @@ body{
 .social i:hover{
   background: black;
 }
+.social p{
+  padding-left: 20px;
+}
 .pago{
   text-align: center;
+}
+.pago ul{
+  padding: 0px;
 }
 .pago li{
   padding-right:10px;
@@ -78,5 +88,12 @@ body{
   font-size: 1.5em;
 }
 .navbar{
-  background-color: #ffd3c5;
+  background-color: #ffe9e2;
+  font-weight: bold;
+}
+.navbar button{
+  color:black;
+}
+.navbar button:hover{
+  background-color: #fff;
 }
