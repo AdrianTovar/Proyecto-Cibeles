@@ -1,0 +1,99 @@
+html{
+  position:relative;
+  min-height: 100%;
+}
+body{
+  margin-bottom: 80px;
+}
+.header{
+  font-family: 'Pacifico',cursive;
+  color: red;
+}
+.pie{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  font-family: 'Pacifico',cursive;
+  /* height:80px;
+  line-height: 80px; */
+  background-color: #ffd3c5;
+  border-top: 1px solid #e5bdb1;
+}
+.pie p{
+  padding-top: 20px;
+}
+.pie ul li {
+      list-style-type: none;
+      display: inline-block;
+  }
+  .pie ul li a i {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 10px;
+    padding-top: 15%;
+    transition: all 0.2s ease-in-out;
+  }
+  i.fa{
+    font-size: 1.2rem;
+  }
+
+.fa-facebook {
+   background:#3b5998;
+ }
+
+.fa-twitter {
+    background:#00aced;
+ }
+ .fa-instagram{
+   background: #f09433;
+   background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+   background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+   background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+ }
+ .fa-pinterest-square{
+   background:#cb2027;
+ }
+ .fa-youtube{
+   background: #ff0000;
+ }
+ .fa-tumblr-square{
+   background: #32506d;
+ }
+ .fa-cc-visa{
+   color:#003087;
+ }
+ .fa-cc-paypal{
+   color:#003087;
+ }
+.social i:hover{
+  background: black;
+}
+.social p{
+  padding-left: 20px;
+}
+.pago{
+  text-align: center;
+}
+.pago ul{
+  padding: 0px;
+}
+.pago li{
+  padding-right:10px;
+}
+.pago i{
+  font-size: 1.5em;
+}
+.navbar{
+  background-color: #ffe9e2;
+  font-weight: bold;
+}
+.navbar button{
+  color:black;
+}
+.navbar button:hover{
+  background-color: #fff;
+}
