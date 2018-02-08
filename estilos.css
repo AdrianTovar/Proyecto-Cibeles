@@ -1,6 +1,8 @@
 html{
   position:relative;
   min-height: 100%;
+
+
 }
 body{
   margin-bottom: 80px;
@@ -105,11 +107,61 @@ body{
   background-color:  #ffe9e2;
   padding-left: 10px;
 }
-.row:nth-child(2){
-  height: 50%;
-  width: 100%;
-}
+.cuerpo{
+  /* width:960px; */
 
-.carousel-item{
-  width: 100%;
+}
+.carrusel{
+  /* width: 30%; */
+  padding-top: 2%;
+}
+.carousel{
+  padding: 0px;
+  margin: 0px;
+  width:60%;
+  margin-left: 20%;
+  /* border: 3px solid black;
+  border-radius: 10px; */
+  padding: 1%;
+
+}
+.carousel img{
+  height: 300px;
+}
+/* .carousel-next-control{
+  opacity: 90%;
+} */
+.info{
+  padding-top: 10%;
+  padding-bottom: 40%;
+  padding-left: 5%;
+  padding-right: 5%;
+  /* width: 50%; */
+
+}
+.info figure{
+  border: 2px solid black;
+  padding-bottom: 5%;
+  border-radius: 15px;
+  background-color: #ffe9e2;
+
+}
+.info a{
+  padding-left: 5%;
+
+}
+.info img{
+  width: 30%;
+/* padding: 5%; */
+margin-top:5%;
+border: 1px solid black;
+border-radius: 10%;
+}
+.info p{
+  float: right;
+  vertical-align: middle;
+  overflow: hidden;
+  padding-left: 3%;
+  /* text-align: justify; */
+  font-size: 1.1em;
 }
