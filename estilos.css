@@ -91,13 +91,25 @@ body{
   background-color: #ffe9e2;
   font-weight: bold;
 }
+.nav-item{
+  letter-spacing: 1.7px;
+}
 .navbar button{
   color:black;
 }
 .navbar button:hover{
-  background-color: #;
+  background-color: #f9d0c2;
+  color:black;
 }
 .navbar a {
   background-color:  #ffe9e2;
-  padding-right: 10px;
+  padding-left: 10px;
+}
+.row:nth-child(2){
+  height: 50%;
+  width: 100%;
+}
+
+.carousel-item{
+  width: 100%;
 }
