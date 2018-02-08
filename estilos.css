@@ -95,5 +95,9 @@ body{
   color:black;
 }
 .navbar button:hover{
-  background-color: #fff;
+  background-color: #;
+}
+.navbar a {
+  background-color:  #ffe9e2;
+  padding-right: 10px;
 }
