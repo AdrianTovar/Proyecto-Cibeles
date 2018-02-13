@@ -51,10 +51,11 @@ body{
   height: 35px;
   display: flex;
   align-items: center;
-  color: #FFF;
+  color: #000;
   justify-content: center;
   flex-direction: column;
-  background-color: #ff5959;
+  /* background-color: #ff5959; */
+  background-color: #ffd3c5;
   font-size: 14px;
 }
 
@@ -132,6 +133,10 @@ body{
     width: 280px;
   }
 
+  .acordeon{
+    display: none;
+  }
+
 }
 
 @media (max-width: 989px){
@@ -145,5 +150,32 @@ body{
 
   #desc_comp{
     font-size: 6px;
+  }
+
+  .plegar{
+      padding: 0px 20px 0px 20px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+  }
+
+  .acordeon{
+    display: block;
+  }
+
+  .acordeon{
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+  }
+
+  .acordeon:hover {
+      background-color: #ccc;
   }
 }

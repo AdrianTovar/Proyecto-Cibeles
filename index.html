@@ -50,6 +50,7 @@
       <!-- Cabecera - Dropdown Menu -->
 
       <!-- Pie de la página -->
+
       <div class="row pie">
         <div class="compromisos col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
           <i class="fas fa-truck fa-3x"></i> <br>
@@ -67,7 +68,9 @@
           <i class="far fa-credit-card fa-3x"></i> <br>
           <span id="compromiso">PAGO ONLINE</span> <br> <span id="desc_comp">FÁCIL, CÓMODO Y RÁPIDO.</span>
         </div>
-        <div class="lista col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+
+        <button class="acordeon">Acerca de MuerdeLaTarta</button>
+        <div class="plegar lista col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
           <strong>MuerdeLaTarta</strong>
           <ul>
             <li>Contacto</li>
@@ -80,15 +83,19 @@
             <li>Mapa web</li>
           </ul>
         </div>
-        <div class="suscribete col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+
+        <button class="acordeon">Suscríbete</button>
+        <div class="plegar suscribete col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
           <strong>Suscríbete</strong> <br>
           <span>Novedades, promociones y descuentos en tu email:</span> <br>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" id="subs" type="search" placeholder="Introduce tu email..." aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suscríbete</button>
+          <form class="form-inline">
+            <input class="form-control" id="subs" type="search" placeholder="Introduce tu email..." aria-label="Search">
+            <button class="btn btn-info" type="submit">Suscríbete</button>
           </form>
         </div>
-        <div class="pago col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+
+        <button class="acordeon">Métodos de pago y RRSS</button>
+        <div class="plegar pago col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12" id="metodosPago">
           <strong>Métodos de pago</strong> <br>
           <i class="fab fa-cc-visa fa-2x"></i>
           <i class="fab fa-cc-mastercard fa-2x"></i>
@@ -106,8 +113,8 @@
             <li><a href="#"><i class="fab fa-pinterest-p fa-2x" data-fa-transform="shrink-6" data-fa-mask="fas fa-circle"></i></a></li>
             <li><a href="#"><i class="fab fa-youtube fa-2x" data-fa-transform="shrink-6" data-fa-mask="fas fa-circle"></i></a></li>
           </ul>
-
         </div>
+
         <div class="derechos col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <span>&copy; 2018 MuerdeLaTarta Valencia</span>
         </div>
@@ -117,6 +124,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
+    <script src="./js/mlt.js" charset="utf-8"></script>
   </body>
 </html>
