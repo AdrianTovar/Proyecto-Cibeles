@@ -111,7 +111,7 @@ body{
   border: 1px solid black;
 }
 .slider{
-  height: 200px;
+  height: 250px;
 }
 .slide{
     border: 1px solid black;
@@ -134,7 +134,7 @@ body{
 .geo{
   height: 250px;
   margin-top: 20px;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 .localizacion{
   border: 1px solid black;

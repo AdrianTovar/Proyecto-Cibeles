@@ -1,0 +1,11 @@
+.curso{
+  background-color: grey;
+  border: 1px solid black;
+  height: 200px;
+}
+.imgstatic{
+  height: 300px;
+  background-color: grey;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
