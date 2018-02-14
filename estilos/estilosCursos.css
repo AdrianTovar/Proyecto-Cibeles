@@ -1,3 +1,8 @@
+
+.cursos{
+  margin:0px;
+  padding:0px;
+}
 .curso{
   background-color: grey;
   border: 1px solid black;

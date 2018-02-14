@@ -5,7 +5,7 @@
     <title>Productos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilosProductos.css">
+    <link rel="stylesheet" href="estilos/estilosProductos.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -46,7 +46,18 @@
             <button type="button" class="btn " data-toggle="collapse" data-target="#filtros" name="button" aria-expanded="false">Filtros</button>
               <div class="collapse" id="filtros">
                 <div class="filtros" data-toggle="collapse" id="filtros">
-
+                  <label for=""><b>Precio</b></label><br>
+                    <input type="radio" name="precio" value="preciomas">Precio ascendente<br>
+                    <input type="radio" name="precio" value="preciomenos">Precio descedente<br>
+                  <label for=""><b>Intolerancia</b></label><br>
+                    <input type="checkbox" name="into" value="vegano">Vegano<br>
+                    <input type="checkbox" name="into" value="celiaco">Celíaco<br>
+                    <input type="checkbox" name="into" value="vegetariano">Vegetariano<br>
+                  <label for=""><b>Ventas</b></label><br>
+                    <input type="radio" name="ventas" value="masvendido">Más vendidos<br>
+                    <input type="radio" name="ventas" value="menosvendido">Menos vendido<br>
+                  <label for=""></label>
+                  <button type="button" class="btn" name="button">Filtrar</button>
                 </div>
               </div>
           </div>

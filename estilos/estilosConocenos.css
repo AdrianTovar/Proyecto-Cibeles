@@ -1,0 +1,11 @@
+.imgstatic{
+  height: 400px;
+  background-color: grey;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+.geolocalizacion{
+  height: 250px;
+  background-color: grey;
+  border: 1px solid black;
+}
