@@ -50,18 +50,16 @@
       <!-- Cabecera - Dropdown Menu -->
 
       <!-- Slider -->
-      <div class="row">
-
-
-      <div id="slider" class="carousel slide col-xl-8 offset-xl-2 col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-12 col-12" data-ride="carousel">
-        <!-- Indicators -->
+      <div class="row no-padding">
+      <div id="slider" class="no-padding w-100 carousel slide col-xl-8 offset-xl-2 col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-12 col-12" data-ride="carousel">
+        <!-- Indicadores -->
         <ul class="carousel-indicators">
           <li data-target="#slider" data-slide-to="0" class="active"></li>
           <li data-target="#slider" data-slide-to="1"></li>
           <li data-target="#slider" data-slide-to="2"></li>
         </ul>
 
-        <!-- The slideshow -->
+        <!-- Imágenes Slider -->
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./img/slider1.png" alt="Los Angeles">
@@ -74,7 +72,7 @@
           </div>
         </div>
 
-        <!-- Left and right controls -->
+        <!-- Controles de dirección -->
         <a class="carousel-control-prev" href="#slider" data-slide="prev">
           <span class="carousel-control-prev-icon"></span>
         </a>
@@ -87,10 +85,27 @@
 
       <!-- Localización y RRSS en directo -->
       <div class="row geo">
-        <div class="localizacion col-xl-4 offset-xl-2 col-lg-4 offset-lg-2 col-md-4 offset-md-2 col-sm-9 offset-sm-1 col-12">
-
+        <div class="localizacion col-xl-4 offset-xl-2 col-lg-4 offset-lg-2 col-md-4 offset-md-2 col-sm-6 col-12">
+          <span>¿Dónde estamos?</span>
+          <div id="map"></div>
+          <script>
+            function initMap() {
+              var uluru = {lat: 39.4548243, lng: -0.3957476};
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: uluru
+              });
+              var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+              });
+            }
+          </script>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4Vd-Het22Qqra5WRGsBPFjLSBmE6C3mM&callback=initMap">
+          </script>
         </div>
-        <div class="twitter col-xl-4 col-lg-4 col-md-4 col-sm-9 offset-sm-1 col-12">
+        <div class="twitter col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
 
         </div>
       </div>

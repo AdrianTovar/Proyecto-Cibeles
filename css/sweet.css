@@ -152,13 +152,17 @@ body{
   margin-bottom: 150px;
 }
 .localizacion{
-  border: 1px solid black;
-  background-color: grey;
+  
 }
 .geo .twitter{
   border: 1px solid black;
   background-color: grey;
   margin: 0px;
+}
+
+#map {
+  height: 85%;
+  width: 100%;
 }
 
 @media (min-width: 990px){
@@ -215,4 +219,12 @@ body{
   .acordeon:hover {
       background-color: #ccc;
   }
+
+  .no-padding {
+   padding: 0;
+ }
+
+ .carousel-inner img{
+   height: 180px;
+ }
 }
