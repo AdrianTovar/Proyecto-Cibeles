@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $.getJSON("products.json",function(products){
+          console.log(products);
+        })
+      });
+    </script>
   </head>
   <body>
     <div class="container-fluid">
@@ -43,7 +50,7 @@
       </div>
         <div class="row prod ">
           <div class="col fil col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-            <button type="button" class="btn " data-toggle="collapse" data-target="#filtros" name="button" aria-expanded="false">Filtros</button>
+            <button type="button" class="btn" id="boton" data-toggle="collapse" data-target="#filtros" name="button" aria-expanded="false">Filtros</button>
               <div class="collapse" id="filtros">
                 <div class="filtros" data-toggle="collapse" id="filtros">
                   <label for=""><b>Precio</b></label><br>
@@ -52,7 +59,7 @@
                   <label for=""><b>Intolerancia</b></label><br>
                     <input type="checkbox" name="into" value="vegano">Vegano<br>
                     <input type="checkbox" name="into" value="celiaco">Celíaco<br>
-                    <input type="checkbox" name="into" value="vegetariano">Vegetariano<br>
+                    <input type="checkbox" name="into" value="vegetariano">Diabetico<br>
                   <label for=""><b>Ventas</b></label><br>
                     <input type="radio" name="ventas" value="masvendido">Más vendidos<br>
                     <input type="radio" name="ventas" value="menosvendido">Menos vendido<br>
@@ -64,52 +71,102 @@
             <div class="row tartas col-xl-9 col-lg-9 col-md-9">
               <div class="col tarta col-xl-6 col-lg-6  col-md-6  col-sm-12 col-12">
                 <div class="tartitas">
-                      <img src="imagenes/carrot-cake.jpg" alt="">
+                      <img id="imagen" src="" alt="">
+                      <div class="">
+                        <span id="nomtarta"><b></b></span>
+                        <p id="desctarta"></p>
+                        <button type="button" name="button">Comprar</button>
+                      </div>
                 </div>
               </div>
               <div class="tarta col-xl-6 col-lg-6  col-md-6  col-sm-12 col-12">
                 <div class="tartitas">
-                      <img src="imagenes/carrot-cake.jpg" alt="">
+                  <img id="imagen" src="" alt="">
+                  <div class="">
+                    <span id="nomtarta"><b></b></span>
+                    <p id="desctarta"></p>
+                    <button type="button" name="button">Comprar</button>
+                  </div>
                 </div>
               </div>
               <div class="tarta col-xl-6 col-lg-6  col-md-6  col-sm-12 col-12">
                 <div class="tartitas">
-                      <img src="imagenes/carrot-cake.jpg" alt="">
+                  <img id="imagen" src="" alt="">
+                  <div class="">
+                    <span id="nomtarta"><b></b></span>
+                    <p id="desctarta"></p>
+                    <button type="button" name="button">Comprar</button>
+                  </div>
                 </div>
               </div>
               <div class="tarta col-xl-6 col-lg-6  col-md-6  col-sm-12 col-12">
                 <div class="tartitas">
-                      <img src="imagenes/carrot-cake.jpg" alt="">
+                  <img id="imagen" src="" alt="">
+                  <div class="">
+                    <span id="nomtarta"><b></b></span>
+                    <p id="desctarta"></p>
+                    <button type="button" name="button">Comprar</button>
+                  </div>
                 </div>
               </div>
               <div class="tarta col-xl-6 col-lg-6  col-md-6  col-sm-12 col-12">
                 <div class="tartitas">
-                      <img src="imagenes/carrot-cake.jpg" alt="">
+                  <img id="imagen" src="" alt="">
+                  <div class="">
+                    <span id="nomtarta"><b></b></span>
+                    <p id="desctarta"></p>
+                    <button type="button" name="button">Comprar</button>
+                  </div>
                 </div>
               </div>
               <div class="tarta col-xl-6 col-lg-6  col-md-6  col-sm-12 col-12">
                 <div class="tartitas">
-                      <img src="imagenes/carrot-cake.jpg" alt="">
+                  <img id="imagen" src="" alt="">
+                  <div class="">
+                    <span id="nomtarta"><b></b></span>
+                    <p id="desctarta"></p>
+                    <button type="button" name="button">Comprar</button>
+                  </div>
                 </div>
               </div>
               <div class="tarta col-xl-6 col-lg-6  col-md-6  col-sm-12 col-12">
                 <div class="tartitas">
-                      <img src="imagenes/carrot-cake.jpg" alt="">
+                  <img id="imagen" src="" alt="">
+                  <div class="">
+                    <span id="nomtarta"><b></b></span>
+                    <p id="desctarta"></p>
+                    <button type="button" name="button">Comprar</button>
+                  </div>
                 </div>
               </div>
               <div class="tarta col-xl-6 col-lg-6  col-md-6  col-sm-12 col-12">
                 <div class="tartitas">
-                      <img src="imagenes/carrot-cake.jpg" alt="">
+                  <img id="imagen" src="" alt="">
+                  <div class="">
+                    <span id="nomtarta"><b></b></span>
+                    <p id="desctarta"></p>
+                    <button type="button" name="button">Comprar</button>
+                  </div>
                 </div>
               </div>
               <div class="tarta col-xl-6 col-lg-6  col-md-6  col-sm-12 col-12">
                 <div class="tartitas">
-                      <img src="imagenes/carrot-cake.jpg" alt="">
+                  <img id="imagen" src="" alt="">
+                  <div class="">
+                    <span id="nomtarta"><b></b></span>
+                    <p id="desctarta"></p>
+                    <button type="button" name="button">Comprar</button>
+                  </div>
                 </div>
               </div>
               <div class="tarta col-xl-6 col-lg-6  col-md-6  col-sm-12 col-12">
                 <div class="tartitas">
-                      <img src="imagenes/carrot-cake.jpg" alt="">
+                  <img id="imagen" src="" alt="">
+                  <div class="">
+                    <span id="nomtarta"><b></b></span>
+                    <p id="desctarta"></p>
+                    <button type="button" name="button">Comprar</button>
+                  </div>
                 </div>
               </div>
 

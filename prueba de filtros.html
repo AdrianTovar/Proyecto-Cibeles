@@ -7,17 +7,24 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   </head>
   <body>
-    <div class="">
-      <label for=""><b>Precio</b></label><br>
-        <input type="radio" name="precio" value="preciomas">Precio ascendente<br>
-        <input type="radio" name="precio" value="preciomenos">Precio descedente<br>
-      <label for=""><b>Intolerancia</b></label><br>
-        <input type="checkbox" name="into" value="vegano">Vegano<br>
-        <input type="checkbox" name="into" value="celiaco">Celíaco<br>
-        <input type="checkbox" name="into" value="vegetariano">Vegetariano<br>
-      <label for=""><b>Ventas</b></label><br>
-        <input type="radio" name="ventas" value="masvendido">Más vendidos<br>
-        <input type="radio" name="ventas" value="menosvendido">Menos vendido<br>
-    </div>
+    <form action="Controller?opID=NuevoCliente" method="POST">
+      <h4><b>Información personal</b></h4>
+      <label for="DNI">DNI: </label>
+      <input type="text" name="DNi" id="DNI" value="" /><br>
+      <label for="Nombre">Nombre: </label>
+      <input type="text" name="Nombre" id="Nombre" value="" /><br>
+      <label for="Nombre">Primer Apellido: </label>
+      <input type="text" name="Ape1" id="Ape1" value="" /><br>
+      <label for="Nombre">Segundo Apellido: </label>
+      <input type="text" name="Ape2" id="Ape2" value="" /><br><br>
+
+      <h4><b>Datos de acceso</b></h4>
+      <label for="Nombre">Nick: </label>
+      <input type="text" name="Nick" id="Nick" value="" /><br>
+      <label for="Nombre">Password: </label>
+      <input type="text" name="Passwd" id="Passwd" value="" /><br>
+
+      <input type="submit" name="" value="Registrarse">
+    </form>
   </body>
 </html>

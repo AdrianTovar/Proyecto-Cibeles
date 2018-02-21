@@ -12,17 +12,37 @@
       <div class="row">
 
       </div>
-      <div class="row">
+      <div class="row no-padding">
          <div class="imgstatic col-xl-8 offset-xl-2 col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-12 col-12">
-
+           <picture>
+             <img src="imagenes/nosotros2.jpg" alt="">
+             <p>Somos Pedro y Adrian unos pasteleros de Valencia , cuyo objetivo siempre ha sido hacer feliz a la gente y la mejor manera que conocemos de conseguirlo es haciendo tartas, pasteles, cupcakes etc...</p>
+           </picture>
         </div>
       </div>
       <div class="row">
-        <div class="geolocalizacion col-xl-6 col-lg-6  col-md-6 col-sm-12 col-12">
-
-        </div>
-        <div class="geolocalizacion col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-
+        <div class="geolocalizacion col-xl-12 col-lg-12  col-md-12 col-sm-12 col-12">
+            <div class="mapa">
+              <p>¿Donde nos econtramos?</p>
+              <div id="map"></div>
+                 <script>
+                   function initMap() {
+                     var uluru = {lat: 39.4548243, lng: -0.3957476};
+                     var map = new google.maps.Map(document.getElementById('map'), {
+                       zoom: 15,
+                       center: uluru
+                     });
+                     var marker = new google.maps.Marker({
+                       position: uluru,
+                       map: map
+                     });
+                   }
+                 </script>
+                 <script async defer
+                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4Vd-Het22Qqra5WRGsBPFjLSBmE6C3mM&callback=initMap">
+                 </script>
+                 <span>c/Juan de Garay 25</span>
+            </div>
         </div>
       </div>
       <div class="row">

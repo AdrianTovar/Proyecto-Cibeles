@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>U6 Proyecto DIWEB</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <style media="screen">
+      /*Estilo guia*/
+      ol > li {
+        margin-top: 30px;
+        margin-bottom: 5px;
+      }
+      a{
+        display: block;
+      }
+      /*Fin estilo guia*/
+      /*Estilo web*/
+      .paleta div{
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        display: inline-block;
+      }
+      .color1{
+        background-color: #ffe9e2;
+      }
+      .color2{
+        background-color: #f9f9f9;
+      }
+      /* .color3{
+        background-color: lightsalmon;
+      }
+      .color4{
+        background-color: purple;
+      }
+      .color5{
+        background-color: lightgray;
+      } */
+      .tipografia h1, .tipografia h2{
+        font-family: 'Pacifico', cursive;
+        color: black;
+      }
+      .tipografia h3, p, em{
+        font-family: 'Ruda',sans-serif;
+      }
+      em{
+        font-style: italic;
+      }
+      button{
+        border-style: none;
+        border-radius: 10px;
+        color:black;
+        font-weight: bold;
+        font-family: 'Pacifico',cursive;
+      }
+      .btn1{
+        background-color: lightgrey;
+      }
+      .btn1:hover{
+        background-color: grey;
+      }
+
+      .enlace{
+        color:salmon;
+      }
+      .enlace:hover{
+        color:lightsalmon;
+      }
+      .enlace:visited{
+        color: gray;
+        font-style: italic;
+      }
+      input{
+        border-radius: 10px;
+        outline-style: none;
+        padding-left: 2px;
+        border-color: salmon;
+      }
+      input:focus{
+        border-color: gray;
+      }
+      /*Fin estilo web*/
+    </style>
+  </head>
+  <body>
+    <h1>Ejemplo Guía de estilo</h1>
+    <ol>
+      <li>Paleta cromática</li>
+        <div class="paleta">
+          <div class="color1"></div>
+          <div class="color2"></div>
+          <div class="color3"></div>
+          <div class="color4"></div>
+          <div class="color5"></div>
+        </div>
+      <li>Tipografía</li>
+      <div class="tipografia">
+        <h1>Título Cabecera</h1>
+        <h2>Título Post</h2>
+        <h3>Título Apartados</h3>
+        <p>Texto normal</p>
+        <em>Texto destacado</em>
+      </div>
+      <li>Botones y enlaces</li>
+        <button type="button" name="button" class="btn1">Botón tipo 1</button>
+        <a href="#" class="enlace">Ejemplo de enlace</a>
+      <li>Logos e Iconos</li>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-user-circle" aria-hidden="true"></i>
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <i class="fa fa-map-marker" aria-hidden="true"></i>
+      <i class="fa fa-question-circle" aria-hidden="true"></i>
+      <i class="fa fa-info-circle" aria-hidden="true"></i>
+      <li>Formularios</li>
+        <input type="text" name="" value="">
+    </ol>
+  </body>
+</html>
