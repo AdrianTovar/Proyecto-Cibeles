@@ -234,3 +234,16 @@ body{
    margin-top: 30px !important;
  }
 }
+
+/* Cursos (cursos.html) */
+.cabecera_cursos img{
+  width: 100%;
+}
+
+.cabecera_cursos{
+  text-align: center !important;
+}
+
+.no-padding {
+ padding: 0;
+}
