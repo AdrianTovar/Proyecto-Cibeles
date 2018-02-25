@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="./css/sweet.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <title>MuerdeLaTarta</title>
+    <script type="text/javascript">
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#efefef",
+          "text": "#404040"
+        },
+        "button": {
+          "background": "#8ec760",
+          "text": "#ffffff"
+        }
+      },
+      "content": {
+        "message": "Nuesta web contiene el uso de cookies para asegurar la mejor experiencia de usuario ",
+        "dismiss": "De acuerdo",
+        "link": "Leer más"
+      }
+    })});
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Cabecera - Dropdown Menu -->
+      <div class="row">
+      <div class="supernav w-100">
+        <span><i class="fas fa-user fa-lg"></i>Identificate | </span>
+        <span><i class="fas fa-shopping-cart fa-sm"></i> Carrito: 0 artículos (0,00€)</span>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="">MLT</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#buscador" aria-controls="buscador" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa fa-user fa-lg"></i></span>
+      </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#buscador" aria-controls="buscador" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa fa-search fa-lg"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html">Inicio</a>
+          <a class="nav-item nav-link" href="productos.html">Tartas</a>
+          <a class="nav-item nav-link" href="cursos.html">Cursos</a>
+          <a class="nav-item nav-link" href="conocenos.html">Conócenos</a>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="buscador">
+        <div class="navbar-nav">
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" id="buscarticulo" type="search" placeholder="Cuentanos... ¿Qué te apetece hoy?" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+      </nav>
+      </div>
+      <!-- Cabecera - Dropdown Menu -->
+
+      <!-- Slider -->
+      <div class="row no-padding">
+      <div id="slider" class="no-padding w-100 carousel slide col-xl-8 offset-xl-2 col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-12 col-12" data-ride="carousel">
+        <!-- Indicadores -->
+        <ul class="carousel-indicators">
+          <li data-target="#slider" data-slide-to="0" class="active"></li>
+          <li data-target="#slider" data-slide-to="1"></li>
+          <li data-target="#slider" data-slide-to="2"></li>
+        </ul>
+
+        <!-- Imágenes Slider -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/slider1.png" alt="Los Angeles">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/slider2.png" alt="Chicago">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/slider3.png" alt="New York">
+          </div>
+        </div>
+
+        <!-- Controles de dirección -->
+        <a class="carousel-control-prev" href="#slider" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#slider" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      </div>
+      <!-- Slider -->
+
+      <!-- Localización y RRSS en directo -->
+      <div class="row geo">
+        <div class="localizacion col-xl-4 offset-xl-2 col-lg-4 offset-lg-2 col-md-4 offset-md-2 col-sm-6 col-12">
+          <span>¿Dónde estamos?</span>
+          <div id="map"></div>
+          <script>
+            function initMap() {
+              var uluru = {lat: 39.4548243, lng: -0.3957476};
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: uluru
+              });
+              var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+              });
+            }
+          </script>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4Vd-Het22Qqra5WRGsBPFjLSBmE6C3mM&callback=initMap">
+          </script>
+        </div>
+        <div class="twitter col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+          <span>Que opinan nuestros clientes...</span> <br><br>
+          <div id="feedback" class="">
+          <img id="feedimg" src="./img/feedback/merc.png" alt="">
+          <i class="fab fa-twitter fa-1x"></i>
+          <span id="feeduser">@Empleada_Mercabona</span>
+          <p id="feedtext">Desde que conocemos esta pastelería hemos dejado de comprar las tartas en Mercabona.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Localización y RRSS en directo -->
+
+      <!-- Pie de la página -->
+      <div class="row pie">
+        <div class="compromisos col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+          <i class="fas fa-truck fa-3x"></i> <br>
+          <span id="compromiso">ENTREGA A DOMICILIO</span> <br> <span id="desc_comp">GRATIS EN PEDIDOS SUPERIORES A 40€</span>
+        </div>
+        <div class="compromisos col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+          <i class="far fa-clock fa-3x"></i> <br>
+          <span id="compromiso">ELABORACIÓN EN 48 HORAS</span> <br> <span id="desc_comp">SI HACES TU PEDIDO ANTES DE LAS 13H</span>
+        </div>
+        <div class="compromisos col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+          <i class="fas fa-users fa-3x"></i> <br>
+          <span id="compromiso">SERVICIO DE ASESORAMIENTO</span> <br> <span id="desc_comp">ELIGE LO MEJOR PARA CADA EVENTO</span>
+        </div>
+        <div class="compromisos col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+          <i class="far fa-credit-card fa-3x"></i> <br>
+          <span id="compromiso">PAGO ONLINE</span> <br> <span id="desc_comp">FÁCIL, CÓMODO Y RÁPIDO.</span>
+        </div>
+
+        <button class="acordeon">Acerca de MuerdeLaTarta</button>
+        <div class="plegar lista col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+          <strong>MuerdeLaTarta</strong>
+          <ul>
+            <li>Contacto</li>
+            <li>Dónde servimos</li>
+            <li>Localiza tu tienda</li>
+            <li>Nuestra marca</li>
+            <li>Compromiso de calidad</li>
+            <li>Responsabilidad social</li>
+            <li>Aviso legal</li>
+            <li>Mapa web</li>
+          </ul>
+        </div>
+
+        <button class="acordeon">Suscríbete</button>
+        <div class="plegar suscribete col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+          <strong>Suscríbete</strong> <br>
+          <span>Novedades, promociones y descuentos en tu email:</span> <br>
+          <form class="form-inline">
+            <input class="form-control" id="subs" type="search" placeholder="Introduce tu email..." aria-label="Search">
+            <button class="btn btn-info" type="submit">Suscríbete</button>
+          </form>
+        </div>
+
+        <button class="acordeon">Métodos de pago y RRSS</button>
+        <div class="plegar pago col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12" id="metodosPago">
+          <strong>Métodos de pago</strong> <br>
+          <i class="fab fa-cc-visa fa-2x"></i>
+          <i class="fab fa-cc-mastercard fa-2x"></i>
+          <i class="fab fa-cc-amex fa-2x"></i>
+          <i class="fab fa-cc-paypal fa-2x"></i>
+          <i class="fab fa-cc-apple-pay fa-2x"></i>
+
+          <br><br>
+
+          <strong>Síguenos en nuestras RRSS</strong> <br>
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook-f fa-2x" data-fa-transform="shrink-6" data-fa-mask="fas fa-circle"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter fa-2x" data-fa-transform="shrink-6" data-fa-mask="fas fa-circle"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram fa-2x" data-fa-transform="shrink-6" data-fa-mask="fas fa-circle"></i></a></li>
+            <li><a href="#"><i class="fab fa-pinterest-p fa-2x" data-fa-transform="shrink-6" data-fa-mask="fas fa-circle"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube fa-2x" data-fa-transform="shrink-6" data-fa-mask="fas fa-circle"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="derechos col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+          <span>&copy; 2018 MuerdeLaTarta Valencia</span>
+        </div>
+      </div>
+    </div>
+    <!-- Pie de la página -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="./js/mlt.js" charset="utf-8"></script>
+  </body>
+</html>

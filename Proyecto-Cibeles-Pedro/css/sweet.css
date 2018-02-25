@@ -1,0 +1,469 @@
+@font-face {
+	font-family: 'Conv_Lobster_1.4';
+	src: url('../fonts/Lobster.eot');
+	src: local('☺'), url('../fonts/Lobster.woff') format('woff'), url('../fonts/Lobster.ttf') format('truetype'), url('../fonts/Lobster.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Cabecera */
+.navbar img{
+  width: 45px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar{
+  font-size: 1.5rem;
+}
+
+.navbar-brand{
+  font-family: 'Pacifico',cursive;
+  font-size: 1.5rem;
+  margin: auto;
+  padding-right: 30px;
+}
+
+.navbar-nav{
+  padding-bottom: 10px;
+}
+
+.fa-search, .fa-user{
+  padding: 5px;
+}
+
+.supernav{
+  background-color: #3C3C3B;
+  color: white;
+  text-align: right;
+  padding: 5px 20px 5px 20px;
+}
+
+#bt_identificate{
+  text-decoration: none;
+  color: #FFF;
+}
+/* Cabecera */
+
+html{
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+  margin-bottom: 60px;
+}
+
+.pie{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  border-top: 1px solid #e5bdb1;
+}
+
+.derechos{
+  height: 35px;
+  display: flex;
+  align-items: center;
+  color: #000;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: #ff5959; */
+  background-color: #ffd3c5;
+  font-size: 14px;
+}
+
+.compromisos{
+  padding-top: 20px;
+  background-color: #E8E6E6;
+  text-align: center;
+  height: 150px;
+}
+
+/* Método de pago */
+.pago{
+  background-color: #ffd3c5;
+  font-size: 14px;
+  padding: 20px 0px 20px 70px;
+}
+
+.pago ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.pago ul{
+  margin: 0px;
+	padding: 0px;
+}
+
+.pago ul li a{
+  color: inherit;
+}
+/* Método de pago */
+
+.lista{
+  background-color: #ffd3c5;
+  padding: 20px 0px 20px 70px;
+  font-size: 14px;
+}
+
+.lista ul{
+  margin: 0px;
+	padding: 0px;
+}
+
+.lista li{
+  list-style-type: none;
+}
+
+.suscribete{
+  background-color: #ffd3c5;
+  padding: 20px 0px 20px 20px;
+  font-size: 14px;
+}
+
+.suscribete button{
+  width: 150px;
+}
+
+#compromiso{
+  font-size: 15px;
+}
+
+#desc_comp{
+  font-size: 11px;
+}
+
+/* Slider */
+.slider{
+  height: 300px;
+}
+
+.slide{
+
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-indicators > li {
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+}
+/* Slider */
+
+.geo{
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 150px;
+}
+.localizacion{
+
+}
+
+.geo .twitter{
+  margin: 0px;
+}
+
+#map {
+  height: 85%;
+  width: 100%;
+}
+
+@media (min-width: 990px){
+  #buscador{
+    position: absolute;
+    right: 2%;
+  }
+
+  #buscarticulo{
+    width: 280px;
+  }
+
+  .acordeon{
+    display: none;
+  }
+
+  .curso{
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 989px){
+  .supernav span:first-child{
+    display: none;
+  }
+
+  #compromiso{
+    font-size: 12px;
+  }
+
+  #desc_comp{
+    font-size: 6px;
+  }
+
+  .plegar{
+      padding: 0px 20px 0px 20px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+  }
+
+  .acordeon{
+    display: block;
+  }
+
+  .acordeon{
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+  }
+
+  .acordeon:hover {
+      background-color: #ccc;
+  }
+
+  .no-padding {
+   padding: 0;
+ }
+
+ .carousel-inner img{
+   height: 180px;
+ }
+
+ .localizacion{
+   height: 150px;
+ }
+
+ .twitter{
+   margin-top: 30px !important;
+ }
+}
+/*Productos(productos.html)*/
+.prod{
+
+  margin:0px;
+  margin-bottom: 120px;
+  padding: 0px;
+  background-color: #f9f9f9;
+}
+.fil{
+  padding-left: 0px !important;
+  width: 30%;
+  padding-right: 30px !important;
+
+}
+.btn{
+  margin-left: 90.5px;
+  margin-top: 10px;
+  background-color:  #ffe9e2;
+  align-items: center !important;
+}
+
+.filtros{
+  height:320px;
+  /* border: 1px solid black; */
+  /* background-color: grey; */
+  font-family: 'Pacifico',cursive;
+  padding-left: 10px;
+}
+.filtros label{
+  font-size: 1.1em;
+}
+
+.filtros input{
+  margin-left: 20px;
+}
+.filtros button:hover{
+  background-color: #f9c2b1;
+
+}
+.tartas{
+  font-family: 'Pacifico',cursive;
+  margin:0px;
+}
+.tarta {
+  height: 200px;
+  /* border: 1px solid black; */
+  /* background-color: grey; */
+  margin:0px;
+  padding: 15px;
+}
+
+.tartitas {
+	background-color: grey;
+  box-shadow: 2px 2px 2px #999;
+  height: 190px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px !important;
+  background-color: #ffe9e2;
+  text-align: justify;
+
+}
+.tartitas img{
+  width: 40%;
+  height: 70%;
+  border-radius: 10px;
+  float: left;
+  margin-right: 10px;
+}
+.tartitas span{
+  font-size: 1em;
+}
+.tartitas p{
+  text-align: justify;
+}
+.tartitas button{
+  margin-left: 250px;
+  z-index: 1;
+  float: right;
+	bottom: 10px;
+  right: 15px;
+  background-color: #F56B66;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  padding-left: 40px;
+  padding-right: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  background-image: url('../img/chef.svg');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position:10px center;
+
+}
+.tartitas button:hover{
+  background-color: grey;
+}
+
+/* Cursos (cursos.html) */
+.cabecera_cursos img{
+  width: 100%;
+}
+
+.cabecera_cursos{
+  text-align: center !important;
+  margin-bottom: 15px;
+}
+
+.no-padding {
+ padding: 0;
+}
+
+.curso img{
+  border-radius: 10px;
+  width: 150px;
+  float: left;
+  margin-right: 10px;
+}
+
+.curso{
+  background-color: grey;
+  box-shadow: 2px 2px 2px #999;
+  height: 200px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px !important;
+  background-color: #ffe9e2;
+  text-align: justify;
+}
+
+#precio{
+  font-size: 30px;
+}
+
+.boton_contratar{
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  background-color: #F56B66;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  padding-left: 40px;
+  padding-right: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  background-image: url('../img/chef.svg');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position:10px center;
+}
+
+/* Conocenos (conocenos.html) */
+.conocenos h1{
+  font-size: 30px;
+  font-family: 'Conv_Lobster_1.4';
+  text-align: center;
+}
+
+.resumen p{
+  text-align: justify;
+}
+
+#map {
+  height: 300px;
+  background: #000;
+}
+/*Formulario(formulario.html)*/
+.form form {
+  margin: 10px;
+}
+.form fieldset{
+  margin-top:5px;
+  margin-bottom:5px;
+}
+.form div {
+  margin: .4em 0 .8em 0;
+}
+.form div label {
+  width: 20%;
+  float: left;
+}
+
+.check {
+  display:block;
+}
+.form p {
+  display:inline;
+}
+.form span{
+  width: 10%;
+  float:left;
+}
+#nota{
+  border:1px dotted black;
+  margin: 10px;
+  padding: 5px;
+  font-style: italic;
+  font-size: 0.8em;
+}
+.form input[type="text"]{
+  padding: 0.4em;
+}
+.fom input{
+  border-radius: 5px;
+}
+.form input[type="submit"]{
+  display: block;
+  margin: .4em 0 .8em 0;
+}
