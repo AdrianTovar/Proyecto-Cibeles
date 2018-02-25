@@ -29,7 +29,11 @@ try{
       $datosToken = $usuario;
       $token = JWT::encode($datosToken, $key);
 
-      $ok = array('estatus'=>true, 'token'=>$token);
+
+      $obtenerDatos = json_decode(json_encode($usuario), true);
+      $nomUsuario = $obtenerDatos['first_name'];
+
+      $ok = array('estatus'=>true, 'token'=>$token, 'usuario'=>$nomUsuario);
       header('Content-type: application/json');
       echo json_encode($ok);
     }else{

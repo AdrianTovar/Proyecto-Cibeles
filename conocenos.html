@@ -57,19 +57,67 @@
       </div>
       <!-- Cabecera - Dropdown Menu -->
 
-      <div class="row">
-        <div class="cabecera_cursos col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 no-padding">
-          <picture>
-            <source media="(min-width: 1100px)" srcset="./img/cursos/cursos_logo.png">
-            <source media="(min-width: 660px)" srcset="./img/cursos/logo_cursos_mov.png">
-            <img src="./img/cursos/logo_cursos_mov.png" alt="imagen">
-          </picture>
+      <div class="row justify-content-md-center">
+        <div class="conocenos col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+          <br> <h1>¿Quienes somos MuerdeLaTarta?</h1>
+        </div>
+        <div class="resumen col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
+          <p>MuerdeLaTarta sois cada uno de vosotros, pues sin vuestra presencia este proyecto no se podría haber hecho realidad.
+            Abrimos nuestra primera tienda en febrero de 2012 en la ciudad de Valencia, para dar servicio a todas aquellas personas que quería un toque distinto para sus celebraciones, pues si algo no puede fallar en todo evento es un elaborado dulce.</p>
+          <p>Fueron varios los interesados los que preguntaron si ofreciamos algún tipo de formación para las personas interesadas en iniciarse en el mundo de la repostería, fué así como incluimos los servicios de cursos a la par que inauguramos nuestra segunda tienda.</p>
         </div>
       </div>
 
-      <div class="row justify-content-md-center" id="lista_cursos">
+      <div class="row justify-content-md-center">
+        <div id="dondeEstamos" class="localizanos col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+          <h3>Ven a conocernos...</h3>
+          <span id="error"></span>
+          <strong>Estas a: </strong> <span id="distancia"></span> <br>
+          <strong>Aproximadamente: </strong><span id="duration"></span>
+          <div id="map"></div>
+        </div>
+        <div id="comentanos" class="comentanos col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+          <h3>Contacto</h3> <br>
+            <div class="well well-sm">
+              <form class="form-horizontal" action="" method="post">
+              <fieldset>
+                <!-- Name input-->
+                <div class="form-group">
+                  <label class="col-md-3 control-label" for="name">Nombre</label>
+                  <div class="col-md-9">
+                    <input id="name" name="name" type="text" placeholder="Introduce tu nombre..." class="form-control">
+                  </div>
+                </div>
 
+                <!-- Email input-->
+                <div class="form-group">
+                  <label class="col-md-3 control-label" for="email">Email</label>
+                  <div class="col-md-9">
+                    <input id="email" name="email" type="text" placeholder="Introduce tu email..." class="form-control">
+                  </div>
+                </div>
+
+                <!-- Message body -->
+                <div class="form-group">
+                  <label class="col-md-3 control-label" for="message">Tu mensaje</label>
+                  <div class="col-md-9">
+                    <textarea class="form-control" id="message" name="message" placeholder="¿Qué nos quieres decir?" rows="5"></textarea>
+                  </div>
+                </div>
+
+                <!-- Form actions -->
+                <div class="form-group">
+                  <div class="col-md-12 text-right">
+                    <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                  </div>
+                </div>
+              </fieldset>
+              </form>
+            </div>
+        </div>
       </div>
+
+      <br><br>
 
       <!-- Pie de la página -->
       <div class="row pie">
@@ -146,7 +194,9 @@
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyC4Vd-Het22Qqra5WRGsBPFjLSBmE6C3mM"></script>
     <script src="./js/mlt_cursos.js" charset="utf-8"></script>
     <script src="./js/carrito.js" charset="utf-8"></script>
+    <script src="./js/localizacion.js" charset="utf-8"></script>
   </body>
 </html>

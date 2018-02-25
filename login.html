@@ -15,15 +15,45 @@
       <!-- Cabecera - Dropdown Menu -->
       <div class="row">
       <div class="supernav w-100">
-        <span><i class="fas fa-user fa-lg"></i>Identificate | </span>
+        <span><a data-toggle="collapse" href="#login" aria-expanded="false" aria-controls="login" id="bt_identificate"><i class="fas fa-user fa-lg"></i> Identificate</a> | </span>
         <span><i class="fas fa-shopping-cart fa-sm"></i> Carrito: <span id="num_art">0</span> artículos (<span id="pre_art">0,00</span>€)</span>
       </div>
+        <div class="supernav w-100 collapse" id="login">
+            <form id="formLogin" class="form-inline justify-content-end" action="./Servidor/login.php">
+              <label class="sr-only" for="inlineFormInputGroupUsername2">Usuario</label>
+              <div class="input-group mb-2 mr-sm-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="far fa-user fa-lg"></i></div>
+                </div>
+                <input type="text" class="form-control" id="user" placeholder="Usuario">
+              </div>
+
+              <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+              <div class="input-group mb-2 mr-sm-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-key fa-sm"></i></div>
+                </div>
+                <input type="password" class="form-control" id="pass" placeholder="Contraseña">
+              </div>
+
+              <div class="form-check mb-2 mr-sm-2">
+                <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                <label class="form-check-label" for="inlineFormCheck">
+                  No cerrar sesión
+                </label>
+              </div>
+
+              <button id="conectar" type="submit" class="btn btn-primary mb-2">Conectar</button>
+            </form>
+            <button id="desconectar" type="button" class="btn btn-danger mb-2">Cerrar sesión</button>
+            <strong class="text-danger" id="msgLogin"></strong>
+        </div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="">MLT</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#buscador" aria-controls="buscador" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#login" aria-controls="buscador" aria-expanded="false" aria-label="Toggle navigation">
         <span><i class="fa fa-user fa-lg"></i></span>
       </button>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#buscador" aria-controls="buscador" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,31 +75,9 @@
           </form>
         </div>
       </div>
-      <div class="collapse navbar-collapse" id="buscador">
-        <div class="navbar-nav">
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" id="buscarticulo" type="search" placeholder="Cuentanos... ¿Qué te apetece hoy?" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-          </form>
-        </div>
-      </div>
       </nav>
       </div>
       <!-- Cabecera - Dropdown Menu -->
-
-      <div class="row">
-        <div class="cabecera_cursos col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 no-padding">
-          <picture>
-            <source media="(min-width: 1100px)" srcset="./img/cursos/cursos_logo.png">
-            <source media="(min-width: 660px)" srcset="./img/cursos/logo_cursos_mov.png">
-            <img src="./img/cursos/logo_cursos_mov.png" alt="imagen">
-          </picture>
-        </div>
-      </div>
-
-      <div class="row justify-content-md-center" id="lista_cursos">
-
-      </div>
 
       <!-- Pie de la página -->
       <div class="row pie">
@@ -148,5 +156,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="./js/mlt_cursos.js" charset="utf-8"></script>
     <script src="./js/carrito.js" charset="utf-8"></script>
+    <script src="./js/login.js" charset="utf-8"></script>
   </body>
 </html>

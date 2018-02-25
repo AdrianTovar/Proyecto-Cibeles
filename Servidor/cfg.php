@@ -9,9 +9,9 @@ $cfg = Config::getInstance();
 //Database
 $cfg->set(ConfigKeys::DB_SERVER, 'localhost');
 $cfg->set(ConfigKeys::DB_DRIVER, 'mysql');
-$cfg->set(ConfigKeys::DB_NAME, 'pro_cibi');
+$cfg->set(ConfigKeys::DB_NAME, 'pro_cib');
 $cfg->set(ConfigKeys::DB_USER, 'root');
-$cfg->set(ConfigKeys::DB_PASS, '');
+$cfg->set(ConfigKeys::DB_PASS, 'mysql');
 
 // JSON token key
 $cfg->set(ConfigKeys::JSON_TOKEN_KEY, 'clave_cifrado_token_servidor_super_secreta');

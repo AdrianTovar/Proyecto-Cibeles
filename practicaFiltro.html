@@ -23,7 +23,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="">MLT</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#buscador" aria-controls="buscador" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#login" aria-controls="buscador" aria-expanded="false" aria-label="Toggle navigation">
         <span><i class="fa fa-user fa-lg"></i></span>
       </button>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#buscador" aria-controls="buscador" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,31 +45,31 @@
           </form>
         </div>
       </div>
-      <div class="collapse navbar-collapse" id="buscador">
+      <div class="collapse navbar-collapse" id="login">
         <div class="navbar-nav">
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" id="buscarticulo" type="search" placeholder="Cuentanos... ¿Qué te apetece hoy?" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-          </form>
+          <div class="container">
+
+            <form class="form-signin">
+              <h4 class="form-signin-heading">Hola, bienvenid@ de nuevo...</h4>
+              <label for="inputEmail" class="sr-only">Correo electrónico</label>
+              <input type="email" id="inputEmail" class="form-control" placeholder="Correo electrónico" required autofocus>
+              <label for="inputPassword" class="sr-only">Contrase&ntilde;a</label>
+              <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="remember-me"> Mantener sesión abierta
+                </label>
+              </div>
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar sesión</button>
+            </form>
+
+          </div>
         </div>
       </div>
       </nav>
       </div>
       <!-- Cabecera - Dropdown Menu -->
 
-      <div class="row">
-        <div class="cabecera_cursos col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 no-padding">
-          <picture>
-            <source media="(min-width: 1100px)" srcset="./img/cursos/cursos_logo.png">
-            <source media="(min-width: 660px)" srcset="./img/cursos/logo_cursos_mov.png">
-            <img src="./img/cursos/logo_cursos_mov.png" alt="imagen">
-          </picture>
-        </div>
-      </div>
-
-      <div class="row justify-content-md-center" id="lista_cursos">
-
-      </div>
 
       <!-- Pie de la página -->
       <div class="row pie">
@@ -148,5 +148,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="./js/mlt_cursos.js" charset="utf-8"></script>
     <script src="./js/carrito.js" charset="utf-8"></script>
+    <script src="./Servidor/practicaFiltro.js" charset="utf-8"></script>
   </body>
 </html>
